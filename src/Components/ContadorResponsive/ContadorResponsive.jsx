@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Box,
   Heading,
   Button,
   Center,
   Container,
+  Flex,
 } from "@chakra-ui/react";
 
 const ContadorResponsive = () => {
@@ -23,6 +24,8 @@ const ContadorResponsive = () => {
 
   return (
     <Container
+      maxW={{ base: "100%", md: "50%" }}
+      mx={{ base: 0, md: "auto" }}
       display="flex"
       flexWrap="wrap"
       alignContent="space-around"
@@ -46,15 +49,17 @@ const ContadorResponsive = () => {
           </Heading>
         </Center>
         <Center>
-          <Button colorScheme="teal" mr={2} onClick={incrementarContador}>
-            Incrementar
-          </Button>
-          <Button colorScheme="yellow" mr={2} onClick={resetContador}>
-            Reinicio
-          </Button>
-          <Button colorScheme="red" onClick={decrementarContador}>
-            Decrementar
-          </Button>
+          <Flex direction={{ base: "column", md: "row" }} mt={4}>
+            <Button colorScheme="teal" mb={{ base: 2, md: 0 }} mr={{ md: 2 }} onClick={incrementarContador}>
+              Incrementar
+            </Button>
+            <Button colorScheme="yellow" mb={{ base: 2, md: 0 }} mr={{ md: 2 }} onClick={resetContador}>
+              Reinicio
+            </Button>
+            <Button colorScheme="red" onClick={decrementarContador}>
+              Decrementar
+            </Button>
+          </Flex>
         </Center>
       </Box>
     </Container>
