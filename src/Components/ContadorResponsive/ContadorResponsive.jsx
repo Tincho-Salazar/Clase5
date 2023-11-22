@@ -37,6 +37,7 @@ const ContadorResponsive = () => {
         borderRadius="lg"
         h="400px"
         bgGradient="linear-gradient(135deg, #E41A65, #9e69c5)"
+        boxShadow="xl"
       >
         <Center>
           <Heading
