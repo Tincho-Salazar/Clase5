@@ -46,6 +46,6 @@ Opcionalmente, puedes agregar una animación sutil a los cambios de valor del co
 
 ## Demo
 
-![Contador Responsive](link_de_tu_imagen)
+![Contador Responsive](public/page.png)
 
 **Demo en vivo:** [Contador Responsive](https://tincho-salazar.github.io/Clase5/)
